@@ -3,10 +3,6 @@ from enum import Enum
 from dataclasses import dataclass
 from typing import List
 
-# -----------------------------
-# ENUMS & DATA MODEL
-# -----------------------------
-
 class Gender(str, Enum):
     MALE = 'м'
     FEMALE = 'ж'
@@ -22,10 +18,6 @@ class Form:
     gender: Gender
     education: Education
     answer_yes: bool
-
-# -----------------------------
-# DATABASE LAYER
-# -----------------------------
 
 DB_FILE = 'DataBase.db'
 SCHEMA_SQL = """
